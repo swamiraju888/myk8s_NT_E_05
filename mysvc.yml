@@ -4,11 +4,12 @@ metadata:
   name: myjenkins-svc
   labels:
      app: myjekins-pod
+     version: 2.7.2
 spec:
   type: NodePort
   ports:
   - port: 8080
     nodePort: 30001
     protocol: TCP
-selector:
-    app: myjeins-pod
+  selector:
+      app: myjekins-pod
