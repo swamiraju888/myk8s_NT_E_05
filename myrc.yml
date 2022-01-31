@@ -13,6 +13,6 @@ spec:
      spec:
         containers:
         - name: myjenkins-container   
-          image: myjenkins:2.60.3
+          image: jenkins:2.60.3
           ports:
           - containerPort: 8080  
