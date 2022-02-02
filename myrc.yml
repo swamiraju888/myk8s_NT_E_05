@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myjenkins-rc
+  name: myonlineapp-rc
 spec:
    replicas: 3
    selector: 
-     app: myjenkins
+     app: myonlineapp
    template:
      metadata:
        labels:
-          app: myjenkins
+          app: myonlineapp
      spec:
         containers:
-        - name: myjenkins-container   
-          image: swami4iac/myjenkins:1
+        - name: myonlineapp-container   
+          image: myonlineapp:1
           ports:
           - containerPort: 8080  
